@@ -12,7 +12,7 @@
 		15560AFA1CD6613700888CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15560AF81CD6613700888CAD /* Main.storyboard */; };
 		15560AFC1CD6613700888CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15560AFB1CD6613700888CAD /* Assets.xcassets */; };
 		15560AFF1CD6613700888CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15560AFD1CD6613700888CAD /* LaunchScreen.storyboard */; };
-		15560B0A1CD6613700888CAD /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B091CD6613700888CAD /* BinderTests.swift */; };
+		15560B0A1CD6613700888CAD /* UIControl+BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B091CD6613700888CAD /* UIControl+BinderTests.swift */; };
 		15560B151CD6613700888CAD /* BinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B141CD6613700888CAD /* BinderUITests.swift */; };
 		15560B241CD6616800888CAD /* UIControl+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B231CD6616800888CAD /* UIControl+Binder.swift */; };
 		15560B261CD66BB500888CAD /* UIControlEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B251CD66BB500888CAD /* UIControlEventListener.swift */; };
@@ -52,7 +52,7 @@
 		15560AFE1CD6613700888CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15560B001CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15560B051CD6613700888CAD /* BinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15560B091CD6613700888CAD /* BinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderTests.swift; sourceTree = "<group>"; };
+		15560B091CD6613700888CAD /* UIControl+BinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+BinderTests.swift"; sourceTree = "<group>"; };
 		15560B0B1CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15560B101CD6613700888CAD /* BinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15560B141CD6613700888CAD /* BinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderUITests.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		15560B081CD6613700888CAD /* BinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				15560B091CD6613700888CAD /* BinderTests.swift */,
+				15560B091CD6613700888CAD /* UIControl+BinderTests.swift */,
 				15560B0B1CD6613700888CAD /* Info.plist */,
 			);
 			path = BinderTests;
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15560B0A1CD6613700888CAD /* BinderTests.swift in Sources */,
+				15560B0A1CD6613700888CAD /* UIControl+BinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
