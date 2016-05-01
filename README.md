@@ -4,6 +4,11 @@
 
 A simaple UI Binder for swift 
 
+#### UIControl
+Bind to any existing UIControlEvents
+```swift
+anyUiControl.bindControlEvent(.AllEvents) { print("Any Event") }
+```
 #### UIButton
 ```swift
 button.bindTap { print("tap on button") }
