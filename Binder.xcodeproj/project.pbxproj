@@ -23,6 +23,7 @@
 		15560B301CD66F4C00888CAD /* UISegmentedControl+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */; };
 		15560B321CD6711300888CAD /* UITableView+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B311CD6711300888CAD /* UITableView+Binder.swift */; };
 		15560B341CD675DD00888CAD /* AwesomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B331CD675DD00888CAD /* AwesomeCell.swift */; };
+		15C43E5B1CD6C45200370172 /* TableDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C43E5A1CD6C45200370172 /* TableDataSourceProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Binder.swift"; sourceTree = "<group>"; };
 		15560B311CD6711300888CAD /* UITableView+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Binder.swift"; sourceTree = "<group>"; };
 		15560B331CD675DD00888CAD /* AwesomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCell.swift; sourceTree = "<group>"; };
+		15C43E5A1CD6C45200370172 /* TableDataSourceProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSourceProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				15560B251CD66BB500888CAD /* UIControlEventListener.swift */,
 				15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */,
 				15560B311CD6711300888CAD /* UITableView+Binder.swift */,
+				15C43E5A1CD6C45200370172 /* TableDataSourceProxy.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				15560AF51CD6613700888CAD /* AppDelegate.swift in Sources */,
 				15560B281CD66BFF00888CAD /* UIControlEvents+Hashable.swift in Sources */,
 				15560B2C1CD66D3800888CAD /* UITextField+Binder.swift in Sources */,
+				15C43E5B1CD6C45200370172 /* TableDataSourceProxy.swift in Sources */,
 				15560B2E1CD66ED000888CAD /* UITextView+Binder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +534,7 @@
 				15560B1B1CD6613700888CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15560B1C1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				15560B1E1CD6613700888CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15560B1F1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				15560B211CD6613700888CAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
