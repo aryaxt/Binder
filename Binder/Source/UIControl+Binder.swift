@@ -11,7 +11,7 @@ import UIKit
 public extension UIControl {
 	
 	public func bindControlEvent(event: UIControlEvents, closure: Void->Void) {
-		eventListener?.addClosureForEvent(event, closure: closure)
+		eventListener?.bindClosureToEvent(event, closure: closure)
 	}
 	
 }

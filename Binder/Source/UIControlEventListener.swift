@@ -34,7 +34,7 @@ internal class UIControlEventListener {
 	
 	// MARK: - Public -
 	
-	internal func addClosureForEvent(event: UIControlEvents, closure: Void->Void) {
+	internal func bindClosureToEvent(event: UIControlEvents, closure: Void->Void) {
 		eventListeners[event] = closure
 	}
 	
