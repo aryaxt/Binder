@@ -3,6 +3,7 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/Binder/badge.png)](http://cocoadocs.org/docsets/Binder)
 
 A simaple UI Binder for swift 
+*** Still in development, DO NOT USE ***
 
 #### UIControl
 Bind to any existing UIControlEvents
