@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15560AF51CD6613700888CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560AF41CD6613700888CAD /* AppDelegate.swift */; };
+		15560AF71CD6613700888CAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560AF61CD6613700888CAD /* ViewController.swift */; };
+		15560AFA1CD6613700888CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15560AF81CD6613700888CAD /* Main.storyboard */; };
+		15560AFC1CD6613700888CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15560AFB1CD6613700888CAD /* Assets.xcassets */; };
+		15560AFF1CD6613700888CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15560AFD1CD6613700888CAD /* LaunchScreen.storyboard */; };
+		15560B0A1CD6613700888CAD /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B091CD6613700888CAD /* BinderTests.swift */; };
+		15560B151CD6613700888CAD /* BinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B141CD6613700888CAD /* BinderUITests.swift */; };
+		15560B241CD6616800888CAD /* UIControl+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B231CD6616800888CAD /* UIControl+Binder.swift */; };
+		15560B261CD66BB500888CAD /* UIControlEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B251CD66BB500888CAD /* UIControlEventListener.swift */; };
+		15560B281CD66BFF00888CAD /* UIControlEvents+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */; };
+		15560B2A1CD66C2C00888CAD /* UIButton+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B291CD66C2C00888CAD /* UIButton+Binder.swift */; };
+		15560B2C1CD66D3800888CAD /* UITextField+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2B1CD66D3800888CAD /* UITextField+Binder.swift */; };
+		15560B2E1CD66ED000888CAD /* UITextView+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */; };
+		15560B301CD66F4C00888CAD /* UISegmentedControl+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */; };
+		15560B321CD6711300888CAD /* UITableView+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B311CD6711300888CAD /* UITableView+Binder.swift */; };
+		15560B341CD675DD00888CAD /* AwesomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B331CD675DD00888CAD /* AwesomeCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15560B061CD6613700888CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15560AE91CD6613600888CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15560AF01CD6613600888CAD;
+			remoteInfo = Binder;
+		};
+		15560B111CD6613700888CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15560AE91CD6613600888CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15560AF01CD6613600888CAD;
+			remoteInfo = Binder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15560AF11CD6613600888CAD /* Binder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15560AF41CD6613700888CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15560AF61CD6613700888CAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15560AF91CD6613700888CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15560AFB1CD6613700888CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15560AFE1CD6613700888CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15560B001CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15560B051CD6613700888CAD /* BinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15560B091CD6613700888CAD /* BinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderTests.swift; sourceTree = "<group>"; };
+		15560B0B1CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15560B101CD6613700888CAD /* BinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15560B141CD6613700888CAD /* BinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderUITests.swift; sourceTree = "<group>"; };
+		15560B161CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15560B231CD6616800888CAD /* UIControl+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Binder.swift"; sourceTree = "<group>"; };
+		15560B251CD66BB500888CAD /* UIControlEventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlEventListener.swift; sourceTree = "<group>"; };
+		15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControlEvents+Hashable.swift"; sourceTree = "<group>"; };
+		15560B291CD66C2C00888CAD /* UIButton+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Binder.swift"; sourceTree = "<group>"; };
+		15560B2B1CD66D3800888CAD /* UITextField+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Binder.swift"; sourceTree = "<group>"; };
+		15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Binder.swift"; sourceTree = "<group>"; };
+		15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Binder.swift"; sourceTree = "<group>"; };
+		15560B311CD6711300888CAD /* UITableView+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Binder.swift"; sourceTree = "<group>"; };
+		15560B331CD675DD00888CAD /* AwesomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15560AEE1CD6613600888CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B021CD6613700888CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B0D1CD6613700888CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15560AE81CD6613600888CAD = {
+			isa = PBXGroup;
+			children = (
+				15560AF31CD6613700888CAD /* Binder */,
+				15560B081CD6613700888CAD /* BinderTests */,
+				15560B131CD6613700888CAD /* BinderUITests */,
+				15560AF21CD6613600888CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15560AF21CD6613600888CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15560AF11CD6613600888CAD /* Binder.app */,
+				15560B051CD6613700888CAD /* BinderTests.xctest */,
+				15560B101CD6613700888CAD /* BinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15560AF31CD6613700888CAD /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				15560B221CD6614C00888CAD /* Source */,
+				15560AF41CD6613700888CAD /* AppDelegate.swift */,
+				15560AF61CD6613700888CAD /* ViewController.swift */,
+				15560B331CD675DD00888CAD /* AwesomeCell.swift */,
+				15560AF81CD6613700888CAD /* Main.storyboard */,
+				15560AFB1CD6613700888CAD /* Assets.xcassets */,
+				15560AFD1CD6613700888CAD /* LaunchScreen.storyboard */,
+				15560B001CD6613700888CAD /* Info.plist */,
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		15560B081CD6613700888CAD /* BinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				15560B091CD6613700888CAD /* BinderTests.swift */,
+				15560B0B1CD6613700888CAD /* Info.plist */,
+			);
+			path = BinderTests;
+			sourceTree = "<group>";
+		};
+		15560B131CD6613700888CAD /* BinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15560B141CD6613700888CAD /* BinderUITests.swift */,
+				15560B161CD6613700888CAD /* Info.plist */,
+			);
+			path = BinderUITests;
+			sourceTree = "<group>";
+		};
+		15560B221CD6614C00888CAD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				15560B231CD6616800888CAD /* UIControl+Binder.swift */,
+				15560B291CD66C2C00888CAD /* UIButton+Binder.swift */,
+				15560B2B1CD66D3800888CAD /* UITextField+Binder.swift */,
+				15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */,
+				15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */,
+				15560B251CD66BB500888CAD /* UIControlEventListener.swift */,
+				15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */,
+				15560B311CD6711300888CAD /* UITableView+Binder.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15560AF01CD6613600888CAD /* Binder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15560B191CD6613700888CAD /* Build configuration list for PBXNativeTarget "Binder" */;
+			buildPhases = (
+				15560AED1CD6613600888CAD /* Sources */,
+				15560AEE1CD6613600888CAD /* Frameworks */,
+				15560AEF1CD6613600888CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Binder;
+			productName = Binder;
+			productReference = 15560AF11CD6613600888CAD /* Binder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15560B041CD6613700888CAD /* BinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15560B1C1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderTests" */;
+			buildPhases = (
+				15560B011CD6613700888CAD /* Sources */,
+				15560B021CD6613700888CAD /* Frameworks */,
+				15560B031CD6613700888CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15560B071CD6613700888CAD /* PBXTargetDependency */,
+			);
+			name = BinderTests;
+			productName = BinderTests;
+			productReference = 15560B051CD6613700888CAD /* BinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15560B0F1CD6613700888CAD /* BinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15560B1F1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderUITests" */;
+			buildPhases = (
+				15560B0C1CD6613700888CAD /* Sources */,
+				15560B0D1CD6613700888CAD /* Frameworks */,
+				15560B0E1CD6613700888CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15560B121CD6613700888CAD /* PBXTargetDependency */,
+			);
+			name = BinderUITests;
+			productName = BinderUITests;
+			productReference = 15560B101CD6613700888CAD /* BinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15560AE91CD6613600888CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Aryan Ghassemi";
+				TargetAttributes = {
+					15560AF01CD6613600888CAD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					15560B041CD6613700888CAD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 15560AF01CD6613600888CAD;
+					};
+					15560B0F1CD6613700888CAD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 15560AF01CD6613600888CAD;
+					};
+				};
+			};
+			buildConfigurationList = 15560AEC1CD6613600888CAD /* Build configuration list for PBXProject "Binder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15560AE81CD6613600888CAD;
+			productRefGroup = 15560AF21CD6613600888CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15560AF01CD6613600888CAD /* Binder */,
+				15560B041CD6613700888CAD /* BinderTests */,
+				15560B0F1CD6613700888CAD /* BinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15560AEF1CD6613600888CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15560AFF1CD6613700888CAD /* LaunchScreen.storyboard in Resources */,
+				15560AFC1CD6613700888CAD /* Assets.xcassets in Resources */,
+				15560AFA1CD6613700888CAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B031CD6613700888CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B0E1CD6613700888CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15560AED1CD6613600888CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15560AF71CD6613700888CAD /* ViewController.swift in Sources */,
+				15560B2A1CD66C2C00888CAD /* UIButton+Binder.swift in Sources */,
+				15560B341CD675DD00888CAD /* AwesomeCell.swift in Sources */,
+				15560B301CD66F4C00888CAD /* UISegmentedControl+Binder.swift in Sources */,
+				15560B321CD6711300888CAD /* UITableView+Binder.swift in Sources */,
+				15560B241CD6616800888CAD /* UIControl+Binder.swift in Sources */,
+				15560B261CD66BB500888CAD /* UIControlEventListener.swift in Sources */,
+				15560AF51CD6613700888CAD /* AppDelegate.swift in Sources */,
+				15560B281CD66BFF00888CAD /* UIControlEvents+Hashable.swift in Sources */,
+				15560B2C1CD66D3800888CAD /* UITextField+Binder.swift in Sources */,
+				15560B2E1CD66ED000888CAD /* UITextView+Binder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B011CD6613700888CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15560B0A1CD6613700888CAD /* BinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15560B0C1CD6613700888CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15560B151CD6613700888CAD /* BinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15560B071CD6613700888CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15560AF01CD6613600888CAD /* Binder */;
+			targetProxy = 15560B061CD6613700888CAD /* PBXContainerItemProxy */;
+		};
+		15560B121CD6613700888CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15560AF01CD6613600888CAD /* Binder */;
+			targetProxy = 15560B111CD6613700888CAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15560AF81CD6613700888CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15560AF91CD6613700888CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15560AFD1CD6613700888CAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15560AFE1CD6613700888CAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15560B171CD6613700888CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15560B181CD6613700888CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15560B1A1CD6613700888CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Binder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.Binder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15560B1B1CD6613700888CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Binder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.Binder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		15560B1D1CD6613700888CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.BinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Binder.app/Binder";
+			};
+			name = Debug;
+		};
+		15560B1E1CD6613700888CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.BinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Binder.app/Binder";
+			};
+			name = Release;
+		};
+		15560B201CD6613700888CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.BinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Binder;
+			};
+			name = Debug;
+		};
+		15560B211CD6613700888CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aryaxt.BinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Binder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15560AEC1CD6613600888CAD /* Build configuration list for PBXProject "Binder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15560B171CD6613700888CAD /* Debug */,
+				15560B181CD6613700888CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15560B191CD6613700888CAD /* Build configuration list for PBXNativeTarget "Binder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15560B1A1CD6613700888CAD /* Debug */,
+				15560B1B1CD6613700888CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15560B1C1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15560B1D1CD6613700888CAD /* Debug */,
+				15560B1E1CD6613700888CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15560B1F1CD6613700888CAD /* Build configuration list for PBXNativeTarget "BinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15560B201CD6613700888CAD /* Debug */,
+				15560B211CD6613700888CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15560AE91CD6613600888CAD /* Project object */;
+}
