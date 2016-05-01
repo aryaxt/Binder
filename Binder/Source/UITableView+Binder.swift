@@ -11,12 +11,12 @@ import UIKit
 public extension UITableView {
 	
 	public func bindNumberOfSections(closure: Void->Int) -> UITableView {
-		dataSourceProxy.numberOfSectionsClusre = closure
+		dataSourceProxy.numberOfSectionsClosure = closure
 		return self
 	}
 	
 	public func bindNumberOfRowsForSection(closure: Int->Int) -> UITableView {
-		dataSourceProxy.numberOfRowsClusre = closure
+		dataSourceProxy.numberOfRowsClosure = closure
 		return self
 	}
 	
@@ -27,7 +27,7 @@ public extension UITableView {
 	
 	public func bindCell<T: UITableViewCell>(type: T.Type, closure: (NSIndexPath, T)->Void) -> UITableView {
 		dataSourceProxy.cellClassName = String(T)
-		dataSourceProxy.cellClosure = { (indexPath, cell) in
+		dataSourceProxy.cellClosure = { indexPath, cell in
 			guard let customCell = cell as? T else { fatalError("Invalid cell type \(cell.dynamicType)") }
 			closure(indexPath, customCell)
 		}

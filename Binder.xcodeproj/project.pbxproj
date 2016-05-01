@@ -16,7 +16,7 @@
 		15560B151CD6613700888CAD /* BinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B141CD6613700888CAD /* BinderUITests.swift */; };
 		15560B241CD6616800888CAD /* UIControl+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B231CD6616800888CAD /* UIControl+Binder.swift */; };
 		15560B261CD66BB500888CAD /* UIControlEventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B251CD66BB500888CAD /* UIControlEventListener.swift */; };
-		15560B281CD66BFF00888CAD /* UIControlEvents+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */; };
+		15560B281CD66BFF00888CAD /* UIControlEvents+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B271CD66BFF00888CAD /* UIControlEvents+Binder.swift */; };
 		15560B2A1CD66C2C00888CAD /* UIButton+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B291CD66C2C00888CAD /* UIButton+Binder.swift */; };
 		15560B2C1CD66D3800888CAD /* UITextField+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2B1CD66D3800888CAD /* UITextField+Binder.swift */; };
 		15560B2E1CD66ED000888CAD /* UITextView+Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */; };
@@ -59,7 +59,7 @@
 		15560B161CD6613700888CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15560B231CD6616800888CAD /* UIControl+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Binder.swift"; sourceTree = "<group>"; };
 		15560B251CD66BB500888CAD /* UIControlEventListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlEventListener.swift; sourceTree = "<group>"; };
-		15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControlEvents+Hashable.swift"; sourceTree = "<group>"; };
+		15560B271CD66BFF00888CAD /* UIControlEvents+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControlEvents+Binder.swift"; sourceTree = "<group>"; };
 		15560B291CD66C2C00888CAD /* UIButton+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Binder.swift"; sourceTree = "<group>"; };
 		15560B2B1CD66D3800888CAD /* UITextField+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Binder.swift"; sourceTree = "<group>"; };
 		15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Binder.swift"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				15560B2D1CD66ED000888CAD /* UITextView+Binder.swift */,
 				15560B2F1CD66F4C00888CAD /* UISegmentedControl+Binder.swift */,
 				15560B251CD66BB500888CAD /* UIControlEventListener.swift */,
-				15560B271CD66BFF00888CAD /* UIControlEvents+Hashable.swift */,
+				15560B271CD66BFF00888CAD /* UIControlEvents+Binder.swift */,
 				15560B311CD6711300888CAD /* UITableView+Binder.swift */,
 				15C43E5A1CD6C45200370172 /* TableDataSourceProxy.swift */,
 			);
@@ -302,7 +302,7 @@
 				15560B241CD6616800888CAD /* UIControl+Binder.swift in Sources */,
 				15560B261CD66BB500888CAD /* UIControlEventListener.swift in Sources */,
 				15560AF51CD6613700888CAD /* AppDelegate.swift in Sources */,
-				15560B281CD66BFF00888CAD /* UIControlEvents+Hashable.swift in Sources */,
+				15560B281CD66BFF00888CAD /* UIControlEvents+Binder.swift in Sources */,
 				15560B2C1CD66D3800888CAD /* UITextField+Binder.swift in Sources */,
 				15C43E5B1CD6C45200370172 /* TableDataSourceProxy.swift in Sources */,
 				15560B2E1CD66ED000888CAD /* UITextView+Binder.swift in Sources */,

@@ -11,8 +11,8 @@ import UIKit
 internal class TableDataSourceProxy: NSObject, UITableViewDataSource {
 	
 	private weak var dataSource: UITableViewDataSource?
-	internal var numberOfSectionsClusre: (Void->Int)?
-	internal var numberOfRowsClusre: (Int->Int)?
+	internal var numberOfSectionsClosure: (Void->Int)?
+	internal var numberOfRowsClosure: (Int->Int)?
 	internal var cellIdentifierClosure: (NSIndexPath->String)?
 	internal var cellClosure: ((NSIndexPath, UITableViewCell)->Void)?
 	internal var selectionClosure: (NSIndexPath->Void)?
@@ -28,11 +28,11 @@ internal class TableDataSourceProxy: NSObject, UITableViewDataSource {
 	}
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return numberOfSectionsClusre?() ?? 1
+		return numberOfSectionsClosure?() ?? 1
 	}
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return numberOfRowsClusre?(section) ?? 0
+		return numberOfRowsClosure?(section) ?? 0
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
