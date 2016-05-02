@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
 	
 	@IBOutlet private var button: UIButton!
 	@IBOutlet private var textField: UITextField!
@@ -32,6 +32,10 @@ class ViewController: UIViewController {
 			.bindSelection { indexPath in print("selected row: \(self.tableData[indexPath.row]))") }
 		
 	}
-
+	
+	func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+		print(indexPath)
+	}
+	
 }
 

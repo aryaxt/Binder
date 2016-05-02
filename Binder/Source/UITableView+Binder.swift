@@ -35,12 +35,12 @@ public extension UITableView {
 	}
 	
 	public func bindSelection(closure: NSIndexPath->Void) -> UITableView {
-		dataSourceProxy.selectionClosure = closure
+		delegateProxy.selectionClosure = closure
 		return self
 	}
 	
 	public func bindDeselection(closure: NSIndexPath->Void) -> UITableView {
-		dataSourceProxy.deselectionClosure = closure
+		delegateProxy.deselectionClosure = closure
 		return self
 	}
 	
@@ -58,30 +58,59 @@ internal extension UITableView {
 	
 	private struct AssociatedKeys {
 		static var DatasourceProxy = "binder_EventListener"
+		static var DelegateProxy = "binder_EventListener"
 	}
 	
-	internal var dataSourceProxy: TableDataSourceProxy {
+	internal var dataSourceProxy: TableViewDataSourceProxy {
 		get {
-			let proxy: TableDataSourceProxy
+			let proxy: TableViewDataSourceProxy
 			
-			if let aProxy = objc_getAssociatedObject(self, &AssociatedKeys.DatasourceProxy) as? TableDataSourceProxy {
+			if let aProxy = objc_getAssociatedObject(self, &AssociatedKeys.DatasourceProxy) as? TableViewDataSourceProxy {
 				proxy = aProxy
 			}
 			else {
-				proxy = TableDataSourceProxy()
+				proxy = TableViewDataSourceProxy()
 				objc_setAssociatedObject(self, &AssociatedKeys.DatasourceProxy, proxy, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 			}
 			
 			if let aDatasource = dataSource {
-				if let _ = aDatasource as? TableDataSourceProxy {
+				if let _ = aDatasource as? TableViewDataSourceProxy {
 					
 				}
 				else {
-					dataSource = TableDataSourceProxy(dataSource: proxy)
+					dataSource = TableViewDataSourceProxy(dataSource: aDatasource)
 				}
 			}
 			else {
 				dataSource = proxy
+			}
+			
+			return proxy
+		}
+	}
+	
+	internal var delegateProxy: TableViewDelegateProxy {
+		get {
+			let proxy: TableViewDelegateProxy
+			
+			if let aProxy = objc_getAssociatedObject(self, &AssociatedKeys.DelegateProxy) as? TableViewDelegateProxy {
+				proxy = aProxy
+			}
+			else {
+				proxy = TableViewDelegateProxy()
+				objc_setAssociatedObject(self, &AssociatedKeys.DelegateProxy, proxy, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+			}
+			
+			if let aDelegate = delegate {
+				if let _ = aDelegate as? TableViewDelegateProxy {
+					
+				}
+				else {
+					delegate = TableViewDelegateProxy(delegate: aDelegate)
+				}
+			}
+			else {
+				delegate = proxy
 			}
 			
 			return proxy

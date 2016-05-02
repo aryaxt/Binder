@@ -26,6 +26,14 @@ class UIControlBinderTests: XCTestCase {
 	func testAllTouchEvents() { assertControlEvent(.AllTouchEvents) }
 	func testAllEditingEvents() { assertControlEvent(.AllEditingEvents) }
 	
+	func testShouldNotTriggerWhenNotExpected() {
+		let button = UIButton()
+		var eventDetected = false
+		button.bindControlEvent(.TouchUpInside) { eventDetected = true }
+		button.sendActionsForControlEvents(.TouchUpOutside)
+		XCTAssert(eventDetected == false)
+	}
+	
 	private func assertControlEvent(event: UIControlEvents) {
 		let button = UIButton()
 		var eventDetected = false
