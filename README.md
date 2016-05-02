@@ -2,7 +2,7 @@
 [![Build Status](https://api.travis-ci.org/aryaxt/Binder.svg)](https://api.travis-ci.org/aryaxt/Binder)
 [![Version](http://cocoapod-badges.herokuapp.com/v/Binder/badge.png)](http://cocoadocs.org/docsets/Binder)
 
-A simaple UI Binder for swift 
+A simple UI Binder for swift 
 
 *** Still in development, DO NOT USE ***
 
@@ -15,7 +15,7 @@ anyUiControl.bindControlEvent(.AllEvents) { print("Any Event") }
 ```swift
 button.bindTap { print("tap on button") }
 ```
-#### UITxtField
+#### UITextField
 ```swift
 textField.bindTextChange { print("text value: \($0)") }
 ```
