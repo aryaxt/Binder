@@ -19,7 +19,7 @@ button.bindTap { print("tap on button") }
 ```swift
 textField.bindTextChange { print("text value: \($0)") }
 ```
-#### UISegmentedControle
+#### UISegmentedControl
 ```swift
 segmentedControl.bindValueChange { print("selected index \($0)") }
 ```
